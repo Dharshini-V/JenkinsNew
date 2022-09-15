@@ -51,7 +51,9 @@
     </repository>
     <repository>
       <id>wso2-maven2-repository-1</id>
-      <url>https://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+      <url>https://localhost:9443/carbon</url>
+	  <userName>admin</userName>
+	  <password>admind<password>
     </repository>
     <repository>
       <id>wso2-nexus-repository-1</id>
