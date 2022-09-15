@@ -1,0 +1,10 @@
+---
+key: "Demojenkins-1.0.0"
+name : "Demojenkins"
+displayName : "Demojenkins"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/Demojenkins"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
