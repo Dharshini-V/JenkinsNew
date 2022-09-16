@@ -3,7 +3,13 @@
     <resource methods="GET">
         <inSequence>
             <log level="custom">
-                <property name="==Message Log==" value="This is JenkinsAPI log"/>
+                <property name="Start Message Log" value="This is JenkinsAPI log"/>
+            </log>
+            <log level="custom">
+                <property name="Midd Message Log" value="This is JenkinsAPI log"/>
+            </log>
+            <log level="custom">
+                <property name="End Message Log" value="This is JenkinsAPI log"/>
             </log>
         </inSequence>
         <outSequence/>
