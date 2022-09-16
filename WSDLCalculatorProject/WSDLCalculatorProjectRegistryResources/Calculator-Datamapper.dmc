@@ -1,0 +1,32 @@
+map_S_root_S_Envelope = function(){ 
+var outputsoapenv_Envelope={};
+
+outputsoapenv_Envelope =  {};
+outputsoapenv_Envelope.soapenv_Body =  {};
+outputsoapenv_Envelope.soapenv_Body.tem_Multiply =  {};
+outputsoapenv_Envelope.soapenv_Body.tem_Multiply.tem_intA = inputroot.intA;
+outputsoapenv_Envelope.soapenv_Body.tem_Multiply.tem_intB = inputroot.intB;
+outputsoapenv_Envelope.soapenv_Body.tem_Add =  {};
+outputsoapenv_Envelope.soapenv_Body.tem_Add.tem_intA = inputroot.intA;
+outputsoapenv_Envelope.soapenv_Body.tem_Subtract =  {};
+outputsoapenv_Envelope.soapenv_Body.tem_Subtract._ELEMVAL = inputroot.intB;
+outputsoapenv_Envelope.soapenv_Body.tem_Subtract.tem_intA = inputroot.intA;
+outputsoapenv_Envelope.soapenv_Body.tem_Divide =  {};
+outputsoapenv_Envelope.soapenv_Body.tem_Divide._ELEMVAL = inputroot.intB;
+outputsoapenv_Envelope.soapenv_Body.tem_Divide.tem_intA = inputroot.intA;
+outputsoapenv_Envelope.soapenv_Body.tem_Divide.tem_intB = inputroot.intB;
+return outputsoapenv_Envelope;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/wsdl-calculator" name="WSDL-Calculator" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <datamapper config="gov:datamapper/Calculator-Datamapper.dmc" inputSchema="gov:datamapper/Calculator-Datamapper_inputSchema.json" inputType="XML" outputSchema="gov:datamapper/Calculator-Datamapper_outputSchema.json" outputType="XML" xsltStyleSheet="gov:datamapper/Calculator-Datamapper_xsltStyleSheet.xml"/>
+            <call>
+                <endpoint>
+                    <wsdl port="CalculatorSoap12" service="Calculator" uri="http://www.dneonline.com/calculator.asmx?WSDL">
+                        <suspendOnFailure>
+                            <initialDuration>-1</initialDuration>
+                            <progressionFactor>1</progressionFactor>
+                        </suspendOnFailure>
+                        <markForSuspension>
+                            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                        </markForSuspension>
+                    </wsdl>
+                </endpoint>
+            </call>
+            <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

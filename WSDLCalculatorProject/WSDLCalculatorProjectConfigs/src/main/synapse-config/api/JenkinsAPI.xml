@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/JenkinsAPI" name="JenkinsAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <log level="custom">
+                <property name="Start Message Log" value="This is JenkinsAPI log"/>
+            </log>
+            <log level="custom">
+                <property name="End Message Log" value="This is JenkinsAPI log"/>
+            </log>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

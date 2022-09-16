@@ -1,0 +1,10 @@
+---
+key: "WSDL-Calculator-1.0.0"
+name : "WSDL-Calculator"
+displayName : "WSDL-Calculator"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/wsdl-calculator"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false

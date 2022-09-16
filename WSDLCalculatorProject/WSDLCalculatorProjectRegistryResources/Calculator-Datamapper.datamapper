@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamapper:DataMapperRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper">
+  <input>
+    <treeNode name="root" schemaDataType="OBJECT" level="1">
+      <node name="intA" schemaDataType="NUMBER" level="2">
+        <properties key="type" value="number"/>
+        <properties key="id" value="http://wso2jsonschema.org/intA"/>
+        <properties key="nullable" value="false"/>
+        <outNode>
+          <outgoingLink/>
+          <outgoingLink/>
+          <outgoingLink/>
+          <outgoingLink/>
+          <outgoingLink/>
+          <outgoingLink/>
+          <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.0/@node.0/@inNode"/>
+          <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.1/@node.0/@inNode"/>
+          <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.2/@node.0/@inNode"/>
+          <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.3/@node.0/@inNode"/>
+        </outNode>
+        <inNode/>
+      </node>
+      <node name="intB" schemaDataType="NUMBER" level="2">
+        <properties key="type" value="number"/>
+        <properties key="id" value="http://wso2jsonschema.org/intB"/>
+        <properties key="nullable" value="false"/>
+        <outNode>
+          <outgoingLink/>
+          <outgoingLink/>
+          <outgoingLink/>
+          <outgoingLink/>
+          <outgoingLink/>
+          <outgoingLink/>
+          <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.0/@node.1/@inNode"/>
+          <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.2/@inNode"/>
+          <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.3/@inNode"/>
+          <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.3/@node.1/@inNode"/>
+        </outNode>
+        <inNode/>
+      </node>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </input>
+  <output>
+    <treeNode name="soapenv:Envelope" schemaDataType="OBJECT" level="1">
+      <node name="soapenv:Body" schemaDataType="OBJECT" level="2">
+        <node name="tem:Multiply" schemaDataType="OBJECT" level="3">
+          <node name="tem:intA" schemaDataType="NUMBER" level="4">
+            <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+            <properties key="type" value="number"/>
+            <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Multiply/tem:intA"/>
+            <properties key="nullable" value="false"/>
+            <outNode/>
+            <inNode incomingLink="//@input/@treeNode.0/@node.0/@outNode/@outgoingLink.6"/>
+          </node>
+          <node name="tem:intB" schemaDataType="NUMBER" level="4">
+            <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+            <properties key="type" value="number"/>
+            <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Multiply/tem:intB"/>
+            <properties key="nullable" value="false"/>
+            <outNode/>
+            <inNode incomingLink="//@input/@treeNode.0/@node.1/@outNode/@outgoingLink.6"/>
+          </node>
+          <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+          <properties key="type" value="object"/>
+          <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Multiply"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="tem:Add" schemaDataType="OBJECT" level="3">
+          <node name="tem:intA" schemaDataType="NUMBER" level="4">
+            <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+            <properties key="type" value="number"/>
+            <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Add/tem:intA"/>
+            <properties key="nullable" value="false"/>
+            <outNode/>
+            <inNode incomingLink="//@input/@treeNode.0/@node.0/@outNode/@outgoingLink.7"/>
+          </node>
+          <node name="tem:intB" schemaDataType="NUMBER" level="4">
+            <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+            <properties key="type" value="number"/>
+            <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Add/tem:intB"/>
+            <properties key="nullable" value="false"/>
+            <outNode/>
+            <inNode/>
+          </node>
+          <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+          <properties key="type" value="object"/>
+          <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Add"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="tem:Subtract" schemaDataType="OBJECT" level="3">
+          <node name="tem:intA" schemaDataType="NUMBER" level="4">
+            <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+            <properties key="type" value="number"/>
+            <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Subtract/tem:intA"/>
+            <properties key="nullable" value="false"/>
+            <outNode/>
+            <inNode incomingLink="//@input/@treeNode.0/@node.0/@outNode/@outgoingLink.8"/>
+          </node>
+          <node name="tem:intB" schemaDataType="NUMBER" level="4">
+            <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+            <properties key="type" value="number"/>
+            <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Subtract/tem:intB"/>
+            <properties key="nullable" value="false"/>
+            <outNode/>
+            <inNode/>
+          </node>
+          <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+          <properties key="type" value="object"/>
+          <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Subtract"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.1/@outNode/@outgoingLink.7"/>
+        </node>
+        <node name="tem:Divide" schemaDataType="OBJECT" level="3">
+          <node name="tem:intA" schemaDataType="NUMBER" level="4">
+            <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+            <properties key="type" value="number"/>
+            <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Divide/tem:intA"/>
+            <properties key="nullable" value="false"/>
+            <outNode/>
+            <inNode incomingLink="//@input/@treeNode.0/@node.0/@outNode/@outgoingLink.9"/>
+          </node>
+          <node name="tem:intB" schemaDataType="NUMBER" level="4">
+            <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+            <properties key="type" value="number"/>
+            <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Divide/tem:intB"/>
+            <properties key="nullable" value="false"/>
+            <outNode/>
+            <inNode incomingLink="//@input/@treeNode.0/@node.1/@outNode/@outgoingLink.9"/>
+          </node>
+          <properties key="namespaces" value="{prefix=tem, url=http://tempuri.org/}"/>
+          <properties key="type" value="object"/>
+          <properties key="id" value="http://wso2jsonschema.org/soapenv:Body/tem:Divide"/>
+          <properties key="nullable" value="false"/>
+          <properties key="properties_id" value="{tem:intA={id=http://wso2jsonschema.org/soapenv:Body/tem:Multiply/tem:intA, type=number}, tem:intB={id=http://wso2jsonschema.org/soapenv:Body/tem:Multiply/tem:intB, type=number}}"/>
+          <properties key="properties_id" value="{tem:intA={id=http://wso2jsonschema.org/soapenv:Body/tem:Add/tem:intA, type=number}, tem:intB={id=http://wso2jsonschema.org/soapenv:Body/tem:Add/tem:intB, type=number}}"/>
+          <properties key="properties_id" value="{tem:intA={id=http://wso2jsonschema.org/soapenv:Body/tem:Subtract/tem:intA, type=number}, tem:intB={id=http://wso2jsonschema.org/soapenv:Body/tem:Subtract/tem:intB, type=number}}"/>
+          <properties key="properties_id" value="{tem:intA={id=http://wso2jsonschema.org/soapenv:Body/tem:Divide/tem:intA, type=number}, tem:intB={id=http://wso2jsonschema.org/soapenv:Body/tem:Divide/tem:intB, type=number}}"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.1/@outNode/@outgoingLink.8"/>
+        </node>
+        <properties key="namespaces" value="{prefix=soapenv, url=http://schemas.xmlsoap.org/soap/envelope/}"/>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/soapenv:Body"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{tem:Multiply={id=http://wso2jsonschema.org/soapenv:Body/tem:Multiply, type=object, properties={tem:intA={id=http://wso2jsonschema.org/soapenv:Body/tem:Multiply/tem:intA, type=number}, tem:intB={id=http://wso2jsonschema.org/soapenv:Body/tem:Multiply/tem:intB, type=number}}}, tem:Add={id=http://wso2jsonschema.org/soapenv:Body/tem:Add, type=object, properties={tem:intA={id=http://wso2jsonschema.org/soapenv:Body/tem:Add/tem:intA, type=number}, tem:intB={id=http://wso2jsonschema.org/soapenv:Body/tem:Add/tem:intB, type=number}}}, tem:Subtract={id=http://wso2jsonschema.org/soapenv:Body/tem:Subtract, type=object, properties={tem:intA={id=http://wso2jsonschema.org/soapenv:Body/tem:Subtract/tem:intA, type=number}, tem:intB={id=http://wso2jsonschema.org/soapenv:Body/tem:Subtract/tem:intB, type=number}}}, tem:Divide={id=http://wso2jsonschema.org/soapenv:Body/tem:Divide, type=object, properties={tem:intA={id=http://wso2jsonschema.org/soapenv:Body/tem:Divide/tem:intA, type=number}, tem:intB={id=http://wso2jsonschema.org/soapenv:Body/tem:Divide/tem:intB, type=number}}}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="namespaces" value="{prefix=soapenv, url=http://schemas.xmlsoap.org/soap/envelope/},{prefix=tem, url=http://tempuri.org/}"/>
+      <properties key="namespaces" value="{prefix=soapenv, url=http://schemas.xmlsoap.org/soap/envelope/}"/>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </output>
+</datamapper:DataMapperRoot>
