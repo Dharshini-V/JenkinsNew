@@ -3,7 +3,7 @@
     <resource methods="GET">
         <inSequence>
             <log level="custom">
-                <property name="---Start Message Log---" value="This is JenkinsAPI log"/>
+                <property name="Start Message Log" value="This is JenkinsAPI log"/>
             </log>
         </inSequence>
         <outSequence/>
