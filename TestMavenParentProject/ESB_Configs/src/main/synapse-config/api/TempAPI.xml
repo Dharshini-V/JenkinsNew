@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/tempapi" name="TempAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <log level="full">
+                <property name="Flow" value="----FlowStarted------"/>
+            </log>
+            <payloadFactory media-type="xml">
+                <format>
+                    <Message xmlns="">This is TempAPI payload....</Message>
+                </format>
+                <args/>
+            </payloadFactory>
+            <log level="full">
+                <property name="Flow" value="-----FlowEnded------"/>
+            </log>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

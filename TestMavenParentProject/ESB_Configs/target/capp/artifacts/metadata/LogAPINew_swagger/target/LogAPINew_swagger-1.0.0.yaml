@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: LogAPINew
+  description: API Definition of LogAPINew
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/logapinew
+paths:
+  /:
+    get:
+      responses:
+        default:
+          description: Default response

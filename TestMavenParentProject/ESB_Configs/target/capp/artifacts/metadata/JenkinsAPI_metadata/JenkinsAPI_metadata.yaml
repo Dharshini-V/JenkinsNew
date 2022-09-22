@@ -1,0 +1,10 @@
+---
+key: "JenkinsAPI-1.0.0"
+name : "JenkinsAPI"
+displayName : "JenkinsAPI"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/JenkinsAPI"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
